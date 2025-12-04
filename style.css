@@ -1,0 +1,43 @@
+:root{
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #2b8cff;
+  --text: #202640;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg); color:var(--text); display:flex; align-items:center; justify-content:center;
+  min-height:100vh;
+}
+
+.container{
+  background:var(--card); width:100%; max-width:520px; padding:28px; border-radius:12px;
+  box-shadow: 0 8px 30px rgba(20,30,80,0.08);
+}
+
+h1{margin:0 0 12px 0; font-size:20px}
+label{display:block; margin-bottom:8px; color:#59607a}
+
+.input-row{display:flex; gap:10px; margin-bottom:18px}
+#urlInput{
+  flex:1; padding:10px 12px; border:1px solid #e3e6ef; border-radius:8px; font-size:14px;
+}
+#generateBtn{
+  padding:10px 14px; background:var(--accent); color:white; border:0; border-radius:8px; cursor:pointer;
+}
+#generateBtn:active{transform:translateY(1px)}
+
+.qr-area{
+  display:flex; align-items:center; justify-content:center; min-height:220px;
+  border:1px dashed #e6e9f2; border-radius:8px; background:#fbfdff; margin-bottom:12px;
+}
+
+.actions{display:flex; gap:10px}
+.actions button{
+  padding:8px 12px; border-radius:8px; border:1px solid #d9dff5; background:white; cursor:pointer;
+}
+.actions button:disabled{opacity:0.5; cursor:not-allowed}
+
+.note{margin-top:12px; color:#7a8196; font-size:13px}
